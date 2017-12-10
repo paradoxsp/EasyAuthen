@@ -67,6 +67,9 @@
                                     <color key="titleColor" red="1" green="0.98684799420000002" blue="0.96469400059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.98223213142119037" blue="0.95384927739655934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPT-mm-lkq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,6 +84,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="displayTextField" destination="oCO-ya-IxI" id="42q-9b-5Aw"/>
+                        <outlet property="passwordTextField" destination="hQv-yf-5gw" id="ppg-Ew-msU"/>
+                        <outlet property="userTextField" destination="b5g-wP-EOE" id="gqQ-f2-YCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
