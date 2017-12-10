@@ -36,8 +36,25 @@ class ViewController: UIViewController {
         userString = userTextField.text!
         passwordString = passwordTextField.text!
         
+        // Show Log
         print("User >> \(userString)")
-        print("User >> \(passwordString)")
+        print("Password >> \(passwordString)")
+        
+        // Check User
+        //print("Result >> \(dicMemberStrings[userString]!)")
+        
+        if let myCheckPassword = dicMemberStrings[userString] {
+            print("True Password >> \(myCheckPassword)")
+ 
+            if (passwordString == myCheckPassword) {
+                displayTextField.text = displayStrings[3]
+            }else{
+                displayTextField.text = displayStrings[2]
+            }
+        }else{
+            displayTextField.text = displayStrings[1]
+        }
+        
     }
     
     
