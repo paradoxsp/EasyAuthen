@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         "Password False",
         "Welcome Member"
     ]
+    var dicMemberStrings = [
+        "User1":"1",
+        "User2":"2",
+        "User3":"3",    
+    ]
+    
     
     
     @IBOutlet weak var userTextField: UITextField!
